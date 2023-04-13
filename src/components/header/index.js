@@ -6,8 +6,9 @@ const Header = () => {
     return <div class="cabecera">
             <img class="cabecera_logo" src="/img/logo-CinemaScope.png" alt="logo_CinemaScope"></img>
                 <div class="cabecera_tipo">
-                    <i class="cabecera_tipo_elemento"><a href="#">Series</a></i>
-                    <i class="cabecera_tipo_elemento"><a href="#">Películas</a></i>
+                    <Botones url="#" titulo="Series"></Botones>
+                    <Botones url="#" titulo="Películas"></Botones>
+
                 </div>
                 <div class="cabecera_buscador">
                     <nav class="buscador">
