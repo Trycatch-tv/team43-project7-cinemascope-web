@@ -1,0 +1,8 @@
+.btn_elemento {
+    margin: 8px;
+}
+
+a {
+    text-decoration: none;
+    color: var(--background-white);
+}
