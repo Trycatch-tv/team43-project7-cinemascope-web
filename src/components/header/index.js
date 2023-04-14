@@ -1,5 +1,5 @@
-import "./Header.css"
-import Botones from "../botones"
+import "./header.css"
+import Botones from "../buttons"
 
 
 const Header = () => {
