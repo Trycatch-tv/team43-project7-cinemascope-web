@@ -1,0 +1,20 @@
+.cabecera_tipo_elemento {
+    margin-right: 20px;
+    cursor: pointer;
+}
+
+.cabecera_tipo_elemento a {
+    text-decoration: none;
+    color: var(--background-white);
+}
+
+.cabecera_tipo_elemento:hover {
+    transition: 0.5s;
+    background-color: var(--background-white);
+    padding: 5px 15px;
+    border-radius: 20px;
+}
+
+.cabecera_tipo_elemento a:hover {
+    color: var(--background-gray);
+}
