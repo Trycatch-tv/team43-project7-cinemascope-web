@@ -1,4 +1,4 @@
-import SearchBar from "./SearchBar.js";
+import SearchBar from './components/SearchBar.js';
 import SearchIcon from '@mui/icons-material/Search';
 
 const HeaderBar = () => {

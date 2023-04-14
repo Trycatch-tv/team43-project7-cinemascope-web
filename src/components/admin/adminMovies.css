@@ -1,0 +1,69 @@
+/* General page------------------------------- */
+
+.movies-admin{
+    display: flex;
+    flex-direction: column;
+    height: 80vh;
+}
+
+.button-add{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 3% 2% 2% 80%;
+    gap: 4%;
+    padding: 1%;
+    border-radius: 30px;
+    border-style: none;
+}
+
+/*Group of movies container-------------*/
+
+.movies-display-admin{
+    height: 50%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    align-self: center;
+    justify-items: center;
+}
+
+
+/* each movie---------------------------------------------------*/
+
+/* buttons*/
+.buttons-container{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+   }
+   
+   .buttons-edit-delete{
+       background-color: #a82422;
+       border-radius: 30px;
+       border-style: none;
+       padding: 0.5% 2%;
+       align-items: center;
+       cursor: pointer;
+   }
+   
+   .icon-admin{
+       color: white;
+   }
+
+/*movie*/
+.movie-preview{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    width: 85%;
+    gap: 3%;
+}
+
+.movie-preview .movie-poster{
+    width: 100%;
+    height: 80%;
+}
+
+.movie-title{
+    font-weight: 700;
+}

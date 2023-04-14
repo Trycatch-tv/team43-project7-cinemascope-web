@@ -1,4 +1,3 @@
-import SearchBar from "./SearchBar.js";
 
 const Filter = () => {
     return (
