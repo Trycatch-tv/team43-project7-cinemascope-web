@@ -1,4 +1,4 @@
-import SearchBar from "./Searchbar.js";
+import SearchBar from "./SearchBar.js";
 
 const Filter = () => {
     return (
