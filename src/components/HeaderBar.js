@@ -1,13 +1,18 @@
-import SearchBar from "./SearchBar.js";
+import SearchBar from "./Searchbar.js";
+import SearchIcon from '@mui/icons-material/Search';
 
 const HeaderBar = () => {
     return ( 
         <header><img src="" alt="logo" />
-        <SearchBar />
-        <div>
-            <p>filtro</p>
-            <a href="/login">login</a>
-        </div></header>
+            <div className="search-header">
+            <SearchBar />
+            <SearchIcon />
+            </div>
+            <div>
+                <p>filtro</p>
+                <a href="/login">login</a>
+            </div>
+        </header>
      );
 }
  

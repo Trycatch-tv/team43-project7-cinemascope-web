@@ -21,11 +21,6 @@ color:white;
 background-color: black;
 }
 
-header .search-input{
-  width: 25%;
-  justify-content: center;
-}
-
 header>div{
 width: 10%;
 display: flex;
@@ -33,10 +28,19 @@ justify-content: space-between;
 align-items: center;
 }
 
+.search-header{
+  width: 25%;
+}
+
+.search-input{
+  width: 100%;
+  margin-left: 2%;
+}
+
 input{
   width: 85%;
   padding: 1% 2%;
-  border-radius: 20px;
+  border-radius: 5px;
   margin-right: 1%;
 }
 
@@ -87,22 +91,93 @@ padding: 2% 10%;
   background-color: rgb(170, 0, 0);
 }
 
+/* ---------------------Genrehabar-----------------*/
+
+.genre-bar{
+  background-color: rgb(36, 36, 36);
+  color: rgb(199, 199, 199);
+  padding: 0 5%;
+  font-weight: 700;
+}
+
+.genre-bar ul{
+  display: flex;
+  justify-content: space-around;
+}
+
+.genre-bar ul li{
+  padding: 2em 0;
+}
+
+/*NOT WORKING YET*/
+.genre-bar>ul>li:hover{
+  border-bottom: 1% solid red;
+}
 /* ---------------------Searchabar-----------------*/
 
-.search-bar{
+.filter-bar{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 2% 2%;
+  background-color: rgb(78, 78, 78);
+  color:white;
+}
+
+.filter-options{
   display: grid;
-  grid-template: 1fr 1fr/ 20% 20% 20% 20%  20% ;
+  grid-template: 2em 1fr/ repeat(5,20%)  ;
   height: 15vh;
 }
 
-.search-bar input {
+.filter-options p{
+  margin-left: 5%;
+}
+
+.filter-options input {
   height: 2em;
+  background-color: gray;
+  border-style: none;
 }
 
+::placeholder{
+  color: rgb(170, 170, 170);
+  }
 
-main>section>ul{
-display: flex;
-justify-content: space-around;
-margin: 2% 10%;
+.filter-bar button{
+  width: 15%;
+  height: 2em;
+  border-radius: 10px;
+  border-style: none;
+  background-color: rgb(170, 0, 0);
+  color:white;
 }
 
+/*----------------------Movies display------------------------*/
+.movies-display{
+ width: 100%;
+ padding:5%;
+ background-color: black;
+ color: white;
+}
+.movies-display p{
+ font-weight: 800;
+ margin-bottom: 2%;
+}
+
+.movies-list{
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+}
+
+.single-movie .movie-poster{
+  width: 100%;
+  height: 15em;
+  text-align: center;
+  border: 2px solid white;
+}
+.single-movie p{
+  font-weight: 400;
+}
