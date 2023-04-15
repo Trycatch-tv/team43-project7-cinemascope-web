@@ -1,6 +1,6 @@
 import SearchBar from "./SearchBar.js";
 
-const Filter = () => {
+const FiltersMovie = () => {
     return (
         <div className="filter-bar">
             <div className="filter-options">
@@ -20,4 +20,4 @@ const Filter = () => {
      );
 }
  
-export default Filter;
+export default FiltersMovie;

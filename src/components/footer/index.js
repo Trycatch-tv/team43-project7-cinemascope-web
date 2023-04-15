@@ -1,6 +1,6 @@
 import "./footer.css"
 
-const PiePagina = () => {
+const Footer = () => {
     return <footer>
         <div className="foot">
         <p>Equipo 43 - Cinema Scope</p>
@@ -9,4 +9,4 @@ const PiePagina = () => {
     </footer>
 }
 
-export default PiePagina
+export default Footer

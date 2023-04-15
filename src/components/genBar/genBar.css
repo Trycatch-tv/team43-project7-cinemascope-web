@@ -1,0 +1,33 @@
+.genre-bar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--background-black);
+  padding: 2% 12%;
+
+
+}
+
+.genre-bar-elements{
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  flex-grow: 5;
+}
+
+@media screen and (max-width: 1024px) {
+  .genre-bar {
+      transition: 0.5s;
+      padding: 3%;
+  }
+  
+}
+
+@media screen and (max-width: 905px) {
+  .genre-bar-elements{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
