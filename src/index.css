@@ -90,29 +90,6 @@ padding: 2% 10%;
   color: white;
   background-color: rgb(170, 0, 0);
 }
-
-/* ---------------------Genrehabar-----------------*/
-
-.genre-bar{
-  background-color: rgb(36, 36, 36);
-  color: rgb(199, 199, 199);
-  padding: 0 5%;
-  font-weight: 700;
-}
-
-.genre-bar ul{
-  display: flex;
-  justify-content: space-around;
-}
-
-.genre-bar ul li{
-  padding: 2em 0;
-}
-
-/*NOT WORKING YET*/
-.genre-bar>ul>li:hover{
-  border-bottom: 1% solid red;
-}
 /* ---------------------Searchabar-----------------*/
 
 .filter-bar{
