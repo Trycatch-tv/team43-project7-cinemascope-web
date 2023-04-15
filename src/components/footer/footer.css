@@ -1,0 +1,15 @@
+footer {
+    background-color: var(--background-gray);
+    font-size: 12px;
+}
+.foot {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    font-family: var(--font-text);
+    color: var(--background-white);
+}
+
+.foot p {
+    margin: 1%;
+}
