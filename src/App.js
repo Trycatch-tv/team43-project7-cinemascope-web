@@ -1,14 +1,14 @@
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import React from 'react'
-import MovieDetails from './components/MovieDetails.js'
+import MovieDetails from './components/MovieDetails/index.js'
 import Genrebar from './components/genBar/index.js'
-import MoviesDisplay from './components/MoviesDisplay.js'
+import MoviesDisplay from './components/MoviesDisplay/index.js'
 import Header from './components/header';
 import CreateMovie from './components/admin/CreateMovie.js';
 import Admin from './components/admin/Movies.js';
 import EditMovie from './components/admin/EditMovie.js';
 import Footer from './components/footer/index.js';
-import FiltersMovie from './components/Filter.js';
+import FiltersMovie from './components/filters/index.js'
 import './App.css';
 
 const router = createBrowserRouter ([
@@ -26,16 +26,6 @@ function App() {
       <RouterProvider router={router}></RouterProvider>
       {Footer()} 
     </div>
-    // <div className="App">
-    //   <div className="content"></div>
-    //   <HeaderBar />
-    //   <main>
-    //   <MovieDetails />
-    //   <Genrebar/>
-    //   <Filter/>
-    //   <MoviesDisplay />
-    //   </main>
-    // </div>
   );
 }
 
