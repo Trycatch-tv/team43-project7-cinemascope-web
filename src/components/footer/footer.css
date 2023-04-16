@@ -1,12 +1,11 @@
 footer {
-    background-color: var(--background-gray);
-    font-size: 12px;
+    background-color: var(--background-black);
+    font-size: 14px;
 }
 .foot {
     display: flex;
     flex-direction: column;
     text-align: center;
-    font-family: var(--font-text);
     color: var(--background-white);
 }
 

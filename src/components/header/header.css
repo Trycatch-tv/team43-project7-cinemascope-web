@@ -3,7 +3,6 @@
     padding: 2% 12%;
     display: flex;
     justify-content: space-between;
-    font-family: var(--font-text);
     color: var(--background-white);
 }
 
@@ -32,14 +31,17 @@
     width: 35px;
     transition: 0.8s;
     border: none;
-    margin-left:30px ;
+    margin-left:30px;
+    padding: 5px;
     background-color: var(--background-gray);
+    font-size: 12px;
 }
 
 .cabecera_buscador ::placeholder {
     background-image: url(../../../public/img/logo-busqueda.png);
     background-repeat: no-repeat;
     font-family: var(--font-text);
+    justify-content: center;
 }
 
 

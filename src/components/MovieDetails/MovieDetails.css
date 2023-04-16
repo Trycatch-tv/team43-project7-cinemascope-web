@@ -1,0 +1,161 @@
+.movie {
+  display: flex;
+  width: 100%;
+  padding: 5% 12%;
+  background-color: var(--background-black);
+  color: var(--background-white);
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.movie-details {
+  display: flex;
+  justify-content: center;
+}
+
+.movie-poster {
+  width: 160px;
+  height: 230px;
+  align-self: center;
+  border: 1px solid;
+  border-color: var(--background-white);
+  border-style: dashed;
+  text-align: center;
+}
+
+.movie-elements {
+  display: flex;
+  flex-direction: column;
+  margin-left: 3rem;
+}
+
+.movie-title {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.movie-details-time {
+  display: flex;
+  font-size: 12px;
+}
+
+.movie-details-time p {
+  margin: 10px 10px 10px 0;
+}
+
+.movie-genere {
+  padding-left: 10px;
+  border-left: 1px solid;
+}
+
+.movie-rating {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.movie-rating img {
+  width: 18px;
+  height: 18px;
+}
+
+.movie-rating p {
+  margin-left: 10px;
+}
+
+.movie-description {
+  margin-bottom: 10px;
+}
+
+.buttons-movies-details {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 15px;
+}
+
+
+.buttons-movies-details a {
+  text-decoration: none;
+  color: var(--background-white);
+}
+
+.buttons-movies-details a:hover {
+  transition: 0.8s;
+  border: 1px solid var(--background-white);
+}
+
+.movies-buttons-white {
+  background-color: var(--background-gray);
+  padding: 10px 30px;
+  border-radius: 30px;
+  margin-right: 10px;
+}
+
+.movies-buttons-red {
+  background-color: var(--background-red);
+  padding: 10px 30px;
+  border-radius: 30px;
+}
+
+
+@media screen and (max-width: 1024px) {
+  .movie {
+      transition: 0.5s;
+      padding: 3%;
+  }
+  
+}
+
+@media screen and (max-width: 700px) {
+  .movie-details {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+
+  .movie-elements {
+    font-size: 12px;
+    margin: 0;
+    padding: 0;
+    justify-content: center;
+    justify-items: center;
+    text-align: center;
+  }
+  .movie-details-time {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+  }
+
+  .movie-rating {
+    display: flex;
+    justify-content: center;
+  }
+
+  .movie-description {
+    display: none;
+  }
+
+  .buttons-movies-details, il, a{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+
+  }
+
+  .buttons-movies-details a{
+    margin-bottom: 5px;
+  }
+
+}
