@@ -10,6 +10,7 @@ import EditMovie from './components/admin/EditMovie.js';
 import Footer from './components/footer/index.js';
 import FiltersMovie from './components/filters/index.js'
 import './App.css';
+import MoviesList from './components/movies/MoviesList.jsx';
 
 const router = createBrowserRouter ([
   {path:'/', element:<main><MovieDetails/><FiltersMovie/><Genrebar/><MoviesDisplay/></main>},               // Página principal
@@ -17,6 +18,8 @@ const router = createBrowserRouter ([
   {path:'/admin', element: <Admin></Admin>},                                  // Listado para administración de películas
   {path:'/admin/movies/create', element:<CreateMovie></CreateMovie>},         // Creación de películas nuevas
   {path:'/admin/movies/:id', element:<EditMovie></EditMovie>},                // Edición de las películas
+  
+  {path:'/movies/admin', element: <MoviesList></MoviesList>},                // Module example api connection
 ]);
 
 function App() {
