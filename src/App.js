@@ -1,8 +1,8 @@
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import React from 'react'
-import MovieDetails from './components/MovieDetails/index.js'
+import MovieDetails from './components/MovieDetails/index.jsx'
 import Genrebar from './components/genBar/index.js'
-import MoviesDisplay from './components/MoviesDisplay/index.js'
+import MoviesDisplay from './components/MoviesDisplay/index.jsx'
 import Header from './components/header';
 import CreateMovie from './components/admin/CreateMovie.js';
 import Admin from './components/admin/Movies.js';

@@ -64,3 +64,21 @@
   
 }
 
+.movies-list svg {
+  cursor: pointer;
+}
+
+.movie-buttom {
+  justify-content: center;
+  align-items: center;
+  background-color: var(--background-red);
+  border-radius: 8px;
+}
+
+.movie-buttom:hover {
+  justify-content: center;
+  align-items: center;
+  background-color: var(--background-black);
+  border-radius: 8px;
+}
+
