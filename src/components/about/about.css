@@ -1,0 +1,44 @@
+.about {
+    display: flex;
+    width: 100%;
+    /* padding: 5% 12%; */
+    background-color: var(--background-white);
+    color: var(--background-black);
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.grid-container {
+  margin: 1% 6% 1% 14%;
+  width: 80%;
+}
+.grid-container h1 {
+  width: 90%;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  font-size: xx-large;
+}
+.grid-container p {
+  width: 90%;
+  text-align: justify;
+  justify-content: left;
+}
+.item {
+  max-height: 350px;
+  margin: 1em;
+  box-sizing: border-box;
+}
+.label {
+  text-align: center;
+}
+.label h5 {
+  font-weight: normal;
+}
+.media {
+  min-height: 175px;
+  object-fit: fill;
+  padding: auto;
+}

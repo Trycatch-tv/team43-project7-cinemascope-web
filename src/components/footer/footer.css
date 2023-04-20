@@ -12,3 +12,6 @@ footer {
 .foot p {
     margin: 1%;
 }
+.foot a{
+    color: var(--background-white);
+}
