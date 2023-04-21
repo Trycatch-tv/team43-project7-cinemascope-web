@@ -3,31 +3,31 @@
 .movies-admin {
   display: flex;
   flex-direction: column;
-  height: 80vh;
   background-color: var(--background-black);
   color: var(--background-white);
-  font: "Oswald", sans-serif;
 }
 
-.button-add {
+.link-button {
+  text-decoration: none;
   display: flex;
   align-items: center;
   justify-content: space-evenly;
-  margin: 3% 2% 2% 80%;
   gap: 1%;
-  padding: 1%;
-  width: 12%;
+  padding: 5%;
+  color: #211e29;
+}
+
+.button-add {
+  width: 10%;
   border-radius: 30px;
   border-style: none;
+  margin: 2%;
+  align-self: flex-end;
 }
 .button-add:hover {
   border: #a82422 solid 3px;
 }
 
-.link-button {
-  width: 100%;
-  text-decoration: none;
-}
 /* LOADING ----------------------------*/
 
 .lds-dual-ring {
@@ -58,7 +58,6 @@
 
 .movie-list {
   width: 70%;
-  height: 450px;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   align-self: center;
@@ -78,7 +77,7 @@
   background-color: #a82422;
   border-radius: 30px;
   border-style: none;
-  padding: 7px 10px;
+  padding: 2% 3%;
   align-items: center;
   cursor: pointer;
 }
@@ -94,11 +93,13 @@
   flex-direction: column;
   width: 85%;
   gap: 3%;
+  padding-bottom: 20%;
 }
 
 .movie-preview .movie-poster {
   width: 100%;
-  height: 80%;
+  height: 70%;
+  border-style: none;
 }
 
 .movie-title {
