@@ -1,17 +1,16 @@
-import React from "react";
+import React, { useState } from "react";
 import EditIcon from "@mui/icons-material/Edit";
 import DeleteIcon from "@mui/icons-material/Delete";
 
 import { Link } from "react-router-dom";
-import { useState } from "react";
 
 import ConfirmDialog from "./ConfirmDialog";
 
 const MovieList = ({ movies }) => {
   const [confirmDialog, setConfirmDialog] = useState({ isOpen: false });
+  const [movieList, setMovieList] = useState(movies);
 
   const handleClickDelete = (movieId) => {
-    //TODO: RE RENDER PAGE AFTER DELETE
     setConfirmDialog({
       isOpen: false,
     });
@@ -21,12 +20,15 @@ const MovieList = ({ movies }) => {
       {
         method: "DELETE",
       }
-    );
+    ).then(() => {
+      // Actualiza la lista de películas después de eliminar una película
+      setMovieList(movieList.filter((movie) => movie.movie_id !== movieId));
+    });
   };
 
   return (
     <div className="movie-list">
-      {movies.map((movie) => (
+      {movieList.map((movie) => (
         <div className="movie-preview" key={movie.movie_id}>
           <div className="buttons-container">
             <button className="buttons-edit-delete">
@@ -36,15 +38,12 @@ const MovieList = ({ movies }) => {
             </button>
             <button
               onClick={() =>
-                //TODO : RE RENDER PAGE AFTER DELETE
-                {
-                  setConfirmDialog({
-                    isOpen: true,
-                    onConfirm: () => {
-                      handleClickDelete(movie.movie_id);
-                    },
-                  });
-                }
+                setConfirmDialog({
+                  isOpen: true,
+                  onConfirm: () => {
+                    handleClickDelete(movie.movie_id);
+                  },
+                })
               }
               className="buttons-edit-delete"
             >
