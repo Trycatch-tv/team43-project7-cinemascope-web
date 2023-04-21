@@ -19,9 +19,8 @@ const router = createBrowserRouter ([
   {path:'/admin', element: <Admin></Admin>},                                  // Listado para administración de películas
   {path:'/admin/movies/create', element:<CreateMovie></CreateMovie>},         // Creación de películas nuevas
   {path:'/admin/movies/:id', element:<EditMovie></EditMovie>},                // Edición de las películas
-  {path:'/admin/about', element: <About></About>},                // About US
-  
-  {path:'/movies/admin', element: <MoviesList></MoviesList>},                // Module example api connection
+  {path:'/about-us', element: <About></About>},                                  // About US
+  {path:'/movies/admin', element: <MoviesList></MoviesList>},                 // Module example api connection
 ]);
 
 function App() {

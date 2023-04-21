@@ -13,7 +13,8 @@ const Header = () => {
       </a>
       <div class="cabecera_tipo">
         <Buttons url="#" titulo="Películas"></Buttons>
-        <Buttons url="/admin/about" titulo="Sobre nosotros"></Buttons>
+        <Buttons url="/admin" titulo="Administración"></Buttons>
+        <Buttons url="/about-us" titulo="Sobre nosotros"></Buttons>
       </div>
     </div>
   );
