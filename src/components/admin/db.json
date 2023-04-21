@@ -1,0 +1,22 @@
+{
+  "movies": [
+    {
+      "title": "Movie 1",
+      "year": 2020,
+      "genre": "fiction",
+      "id": 1
+    },
+    {
+      "title": "Movie 2",
+      "year": 1990,
+      "genre": "action",
+      "id": 2
+    },
+    {
+      "title": "Movie 3",
+      "year": 2020,
+      "genre": "fiction",
+      "id": 3
+    }
+  ]
+}
