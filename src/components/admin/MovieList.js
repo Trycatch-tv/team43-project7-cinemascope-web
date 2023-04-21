@@ -15,9 +15,13 @@ const MovieList = ({ movies }) => {
     setConfirmDialog({
       isOpen: false,
     });
-    fetch("http://localhost:8000/movies/" + movieId, {
-      method: "DELETE",
-    });
+    fetch(
+      "https://dev-cinemascope-api.azurewebsites.net/api/movies/admin/" +
+        movieId,
+      {
+        method: "DELETE",
+      }
+    );
   };
 
   return (
