@@ -1,0 +1,106 @@
+/* General page------------------------------- */
+
+.movies-admin {
+  display: flex;
+  flex-direction: column;
+  height: 80vh;
+  background-color: var(--background-black);
+  color: var(--background-white);
+  font: "Oswald", sans-serif;
+}
+
+.button-add {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  margin: 3% 2% 2% 80%;
+  gap: 1%;
+  padding: 1%;
+  width: 12%;
+  border-radius: 30px;
+  border-style: none;
+}
+.button-add:hover {
+  border: #a82422 solid 3px;
+}
+
+.link-button {
+  width: 100%;
+  text-decoration: none;
+}
+/* LOADING ----------------------------*/
+
+.lds-dual-ring {
+  display: flex;
+  align-self: center;
+  justify-content: center;
+}
+.lds-dual-ring:after {
+  content: " ";
+  display: flex;
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  border: 6px solid #0000009d;
+  border-color: #000000 transparent #000000 transparent;
+  animation: lds-dual-ring 1.2s linear infinite;
+}
+@keyframes lds-dual-ring {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+/*Group of movies container-------------*/
+
+.movie-list {
+  width: 70%;
+  height: 450px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  align-self: center;
+  justify-items: center;
+}
+
+/* each movie---------------------------------------------------*/
+
+/* buttons*/
+.buttons-container {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+
+.buttons-edit-delete {
+  background-color: #a82422;
+  border-radius: 30px;
+  border-style: none;
+  padding: 7px 10px;
+  align-items: center;
+  cursor: pointer;
+}
+
+.icon-admin {
+  color: white;
+}
+
+/*movie*/
+.movie-preview {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  width: 85%;
+  gap: 3%;
+}
+
+.movie-preview .movie-poster {
+  width: 100%;
+  height: 80%;
+}
+
+.movie-title {
+  font-weight: 700;
+}
