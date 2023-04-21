@@ -39,8 +39,9 @@ const About = () => {
         </p>
         <Grid
           container
-          spacing={{ xs: 1, md: 2 }}
+          spacing={{ xs: 5, md: 2 }}
           columns={{ xs: 1, sm: 6, md: 18 }}
+          justifyContent="center"
         >
           {teamData.map((team) => (
             <TeamCard key={team.id} team={team} />

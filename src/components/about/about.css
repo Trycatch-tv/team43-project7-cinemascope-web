@@ -11,18 +11,16 @@
     align-items: center;
 }
 .grid-container {
-  margin: 1% 6% 1% 14%;
+  
   width: 80%;
 }
 .grid-container h1 {
-  width: 90%;
   text-align: center;
   justify-content: center;
   align-items: center;
   font-size: xx-large;
 }
 .grid-container p {
-  width: 90%;
   text-align: justify;
   justify-content: left;
 }

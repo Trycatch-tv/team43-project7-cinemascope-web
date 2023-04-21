@@ -1,70 +1,45 @@
-# Getting Started with Create React App
+# CinemaScope WEB
+[![Build Status](https://dev.azure.com/LuisLopezOrg/CinemaScope/_apis/build/status%2FBuild%20CinemaScope%20WEB%20-%20DEV?branchName=develop)](https://dev.azure.com/LuisLopezOrg/CinemaScope/_build/latest?definitionId=6&branchName=develop)
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This repository contains the source code for the CinemaScope web application, built with Javascript, React, HTML, and CSS.
 
-## Available Scripts
+## 📋 Prerequisites
+Before running the code, the following prerequisites must be met:
 
-In the project directory, you can run:
+- Node.Js must be installed (version 18 or higher)
+- A modern web browser (Chrome, Firefox, Safari, Edge, etc.)
 
-### `npm start`
+## 🚀 Installation
+1. Clone the repository on your local machine.
+```sh
+git clone https://github.com/Trycatch-tv/team43-project7-cinemascope-web.git
+```
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+2. Navigate to the repository folder.
+```sh
+cd team43-project7-cinemascope-web
+```
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+3. Install the dependencies.
+```sh
+npm install
+```
 
-### `npm test`
+4. Run the server.
+```sh
+npm start
+```
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+The server will run on http://localhost:3000.
 
-### `npm run build`
+## 📖 Usage
+All the documentation related to the CinemaScope project is described [here](https://docs.google.com/document/d/1Xie4OuQQERWbxGg42jhRy4DHsqGjC3w8yvWq9H2P6hU/edit?usp=sharing).
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## 🎉 Demo
+To see a live demo of the Smart Classroom application, please visit the following URL: https://dev-cinemascope-web.azurewebsites.net/
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## 🤝 Contributions
+If you wish to contribute to the development of Smart Classroom, please submit a pull request with your proposed changes. Make sure your changes are compatible with the MIT license.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## 📝 License
+This project is licensed under the MIT License. See the LICENSE file for more information.

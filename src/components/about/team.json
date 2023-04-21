@@ -1,17 +1,17 @@
 [
     {
         "id": 1,
-        "image": "https://w7.pngwing.com/pngs/432/398/png-transparent-silhouette-male-silueta-toro-black-silhouette-person.png",
-        "name": "Luis López",
-        "email": "luisdavidlz0202@gmail.com",
-        "position": "Team Lead",
+        "image": "ManuelaGomez.JPEG",
+        "name": "Manuela Gómez",
+        "email": "manu.gomez.e@gmail.com",
+        "position": "Frontend Developer",
         "description": "",
-        "gitHub": "https://github.com/luisdavid0202",
-        "linkedIn": "https://www.linkedin.com/in/luis-david-lopez-zapata-7377a0153/"
+        "gitHub": "https://github.com/manugomz",
+        "linkedIn": "https://www.linkedin.com/in/manuela-g%C3%B3mez-a5547a125/"
     },
     {
         "id": 2,
-        "image": "https://avatars.githubusercontent.com/u/33184446?s=400&u=5310fa02172a8e009861f4e58956d3d286a1722d&v=4",
+        "image": "CristianGarcia.png",
         "name": "Cristian Garcia",
         "email": "2000sajo@gmail.com",
         "position": "Full-Stack Developer",
@@ -21,62 +21,32 @@
     },
     {
         "id": 3,
-        "image": "https://w7.pngwing.com/pngs/432/398/png-transparent-silhouette-male-silueta-toro-black-silhouette-person.png",
-        "name": "Eynar Alvarez",
-        "email": "eynar.j.alvarez.m@gmail.com",
+        "image": "default.png",
+        "name": "Nicol Guevara",
+        "email": "nicgueca@outlook.com",
         "position": "Frontend Developer",
         "description": "",
-        "gitHub": "https://github.com/Eynar92",
-        "linkedIn": "https://www.linkedin.com/in/eynaralvarez"
+        "gitHub": "https://github.com/Neofitar",
+        "linkedIn": ""
     },
     {
         "id": 4,
-        "image": "https://w7.pngwing.com/pngs/432/398/png-transparent-silhouette-male-silueta-toro-black-silhouette-person.png",
-        "name": "Giovanny Gómez",
-        "email": "maacg.ia@gmail.com",
+        "image": "default.png",
+        "name": "Juangui Ramirez",
+        "email": "lapulguita04@gmail.com",
         "position": "Backend Developer",
         "description": "",
-        "gitHub": "https://github.com/maacgia",
-        "linkedIn": "https://www.linkedin.com/in/giovanny-gomez-8ba6ba271/"
+        "gitHub": "https://github.com/Juangui-ramirez",
+        "linkedIn": ""
     },
     {
         "id": 5,
-        "image": "https://w7.pngwing.com/pngs/432/398/png-transparent-silhouette-male-silueta-toro-black-silhouette-person.png",
-        "name": "Joshua Acevedo",
-        "email": "joshuaacevor@gmail.com",
-        "position": "Backend Developer",
+        "image": "LuisDavidLopezZapata.jpg",
+        "name": "Luis López",
+        "email": "luisdavidlz0202@gmail.com",
+        "position": "Team Lead",
         "description": "",
-        "gitHub": "https://github.com/joshArfDev",
-        "linkedIn": "https://www.linkedin.com/in/joshuaarfa/"
-    },
-    {
-        "id": 6,
-        "image": "https://w7.pngwing.com/pngs/432/398/png-transparent-silhouette-male-silueta-toro-black-silhouette-person.png",
-        "name": "Carlos Niño",
-        "email": "sqsandres@gmail.com",
-        "position": "Frontend Developer",
-        "description": "",
-        "gitHub": "https://github.com/sqsandres",
-        "linkedIn": "https://www.linkedin.com/in/sqsandres/"
-    },
-    {
-        "id": 7,
-        "image": "https://w7.pngwing.com/pngs/432/398/png-transparent-silhouette-male-silueta-toro-black-silhouette-person.png",
-        "name": "Luis Rodríguez",
-        "email": "luisdarodriguez164@gmail.com",
-        "position": "Backend Developer",
-        "description": "",
-        "gitHub": "https://github.com/luisdav1",
-        "linkedIn": "https://www.linkedin.com/in/luis-rodr%C3%ADguez-082402248/"
-    },
-    {
-        "id": 8,
-        "image": "https://w7.pngwing.com/pngs/432/398/png-transparent-silhouette-male-silueta-toro-black-silhouette-person.png",
-        "name": "Manuela Gómez",
-        "email": "manu.gomez.e@gmail.com",
-        "position": "Frontend Developer",
-        "description": "",
-        "gitHub": "https://github.com/manugomz",
-        "linkedIn": "https://www.linkedin.com/in/manuela-g%C3%B3mez-a5547a125/"
+        "gitHub": "https://github.com/luisdavid0202",
+        "linkedIn": "https://www.linkedin.com/in/luis-david-lopez-zapata-7377a0153/"
     }
 ]

@@ -8,10 +8,16 @@ import GitHubIcon from "@mui/icons-material/GitHub";
 import "./about.css";
 
 const TeamCard = ({ team }) => {
+  const imagePath = `/img/profilePics/${team.image}`;
   return (
     <Grid item xs={2} sm={2} md={4}>
       <Card className="item">
-        <CardMedia  sx={{ height: 250 }} image={team.image} />
+      <CardMedia
+        component="img"
+        height="250px"
+        width="250px"
+        image={imagePath}
+        alt="Fotografía" />
         <CardContent className="label">
           <h2>{team.name}</h2>
           <hr />
