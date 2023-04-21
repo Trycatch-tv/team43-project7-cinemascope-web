@@ -1,25 +1,22 @@
-import "./header.css"
-import Botones from "../buttons"
-
+import "./header.css";
+import Buttons from "../buttons";
 
 const Header = () => {
-    return <div class="cabecera">
-            <img class="cabecera_logo" src="/img/logo-CinemaScope.png" alt="logo_CinemaScope"></img>
-                <div class="cabecera_tipo">
-                    <Botones url="#" titulo="Series"></Botones>
-                    <Botones url="#" titulo="Películas"></Botones>
+  return (
+    <div class="cabecera">
+      <a href="/">
+        <img
+          class="cabecera_logo"
+          src="/img/logo-CinemaScope.png"
+          alt="logo_CinemaScope"
+        ></img>
+      </a>
+      <div class="cabecera_tipo">
+        <Buttons url="#" titulo="Películas"></Buttons>
+        <Buttons url="/admin/about" titulo="Sobre nosotros"></Buttons>
+      </div>
+    </div>
+  );
+};
 
-                </div>
-                <div class="cabecera_buscador">
-                    <nav class="buscador">
-                        <input type="text" placeholder=" "></input>
-                    </nav>
-                </div>
-                <div class="cabecera_elementos">
-                    <Botones url="#" titulo="Filtro"></Botones>
-                    <Botones url="#" titulo="Login"></Botones>
-                </div>
-        </div>
-}
-
-export default Header 
+export default Header;
