@@ -1,16 +1,25 @@
+import React from "react";
 import EditIcon from "@mui/icons-material/Edit";
 import DeleteIcon from "@mui/icons-material/Delete";
 
 import { Link } from "react-router-dom";
 import { useState } from "react";
 
+import ConfirmDialog from "./ConfirmDialog";
+
 const MovieList = ({ movies }) => {
+  const [confirmDialog, setConfirmDialog] = useState({ isOpen: false });
+
   const handleClickDelete = (movieId) => {
     //TODO: RE RENDER PAGE AFTER DELETE
+    setConfirmDialog({
+      isOpen: false,
+    });
     fetch("http://localhost:8000/movies/" + movieId, {
       method: "DELETE",
     });
   };
+
   return (
     <div className="movie-list">
       {movies.map((movie) => (
@@ -24,7 +33,14 @@ const MovieList = ({ movies }) => {
             <button
               onClick={() =>
                 //TODO : RE RENDER PAGE AFTER DELETE
-                handleClickDelete(movie.movie_id)
+                {
+                  setConfirmDialog({
+                    isOpen: true,
+                    onConfirm: () => {
+                      handleClickDelete(movie.movie_id);
+                    },
+                  });
+                }
               }
               className="buttons-edit-delete"
             >
@@ -40,6 +56,10 @@ const MovieList = ({ movies }) => {
           <p className="movie-year">{movie.release_date}</p>
         </div>
       ))}
+      <ConfirmDialog
+        confirmDialog={confirmDialog}
+        setConfirmDialog={setConfirmDialog}
+      />
     </div>
   );
 };
