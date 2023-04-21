@@ -12,15 +12,15 @@ const Admin = () => {
     data: movies,
     isLoading,
     error,
-  } = useFetch("http://localhost:8000/movies");
+  } = useFetch("https://dev-cinemascope-api.azurewebsites.net/api/movies/");
 
   return (
     <main className="movies-admin">
-      <Link to="/admin/movies/create" className="link-button">
-        <button className="button-add">
+      <button className="button-add">
+        <Link to="/admin/movies/create" className="link-button">
           Agregar nueva <AddCircleIcon />
-        </button>
-      </Link>
+        </Link>
+      </button>
       {error && <div>{error}</div>}
       {isLoading && <div class="lds-dual-ring"></div>}
       {movies && <MovieList movies={movies} />}

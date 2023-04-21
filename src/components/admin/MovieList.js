@@ -14,26 +14,30 @@ const MovieList = ({ movies }) => {
   return (
     <div className="movie-list">
       {movies.map((movie) => (
-        <div className="movie-preview" key={movie.id}>
+        <div className="movie-preview" key={movie.movie_id}>
           <div className="buttons-container">
-            <Link to={`/admin/movies/${movie.id}`}>
-              <button className="buttons-edit-delete">
+            <button className="buttons-edit-delete">
+              <Link to={`/admin/movies/${movie.movie_id}`}>
                 <EditIcon className="icon-admin" />
-              </button>
-            </Link>
+              </Link>
+            </button>
             <button
               onClick={() =>
                 //TODO : RE RENDER PAGE AFTER DELETE
-                handleClickDelete(movie.id)
+                handleClickDelete(movie.movie_id)
               }
               className="buttons-edit-delete"
             >
               <DeleteIcon className="icon-admin" />
             </button>
           </div>
-          <div className="movie-poster">your movie poster here</div>
+          <img
+            className="movie-poster"
+            src={movie.cover_url}
+            alt={movie.title + " poster"}
+          />
           <p className="movie-title">{movie.title}</p>
-          <p className="movie-year">{movie.year}</p>
+          <p className="movie-year">{movie.release_date}</p>
         </div>
       ))}
     </div>

@@ -1,4 +1,5 @@
 import { useState, useEffect } from "react";
+
 const useFetch = (url) => {
   const [data, setData] = useState(null);
   const [isLoading, setIsLoading] = useState(true);
@@ -10,12 +11,13 @@ const useFetch = (url) => {
     fetch(url, { signal: abortFetch.signal })
       .then((res) => {
         if (!res.ok) {
+          console.log(data);
           throw Error("Could not find the movies data");
         }
         return res.json();
       })
       .then((data) => {
-        setData(data);
+        setData(data.body);
         setIsLoading(false);
         setError(null);
       })
