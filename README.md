@@ -36,10 +36,10 @@ The server will run on http://localhost:3000.
 All the documentation related to the CinemaScope project is described [here](https://docs.google.com/document/d/1Xie4OuQQERWbxGg42jhRy4DHsqGjC3w8yvWq9H2P6hU/edit?usp=sharing).
 
 ## 🎉 Demo
-To see a live demo of the Smart Classroom application, please visit the following URL: https://dev-cinemascope-web.azurewebsites.net/
+To see a live demo of the CinemaScope application, please visit the following URL: https://dev-cinemascope-web.azurewebsites.net/
 
 ## 🤝 Contributions
-If you wish to contribute to the development of Smart Classroom, please submit a pull request with your proposed changes. Make sure your changes are compatible with the MIT license.
+If you wish to contribute to the development of CinemaScope, please submit a pull request with your proposed changes. Make sure your changes are compatible with the MIT license.
 
 ## 📝 License
 This project is licensed under the MIT License. See the LICENSE file for more information.
