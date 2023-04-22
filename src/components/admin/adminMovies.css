@@ -41,8 +41,8 @@
   width: 64px;
   height: 64px;
   border-radius: 50%;
-  border: 6px solid #0000009d;
-  border-color: #000000 transparent #000000 transparent;
+  border: 6px solid #ffffff9d;
+  border-color: #ffffff transparent #ffffff transparent;
   animation: lds-dual-ring 1.2s linear infinite;
 }
 @keyframes lds-dual-ring {
@@ -104,4 +104,26 @@
 
 .movie-title {
   font-weight: 700;
+}
+
+/*Confirmation window*/
+
+.confirm-button {
+  padding: 1% 8%;
+  border-style: none;
+  border-radius: 20px;
+  background-color: #a82422;
+  color: #ffffff;
+  margin-bottom: 5%;
+  cursor: pointer;
+}
+
+.deny-button {
+  padding: 1% 8%;
+  border-style: none;
+  border-radius: 20px;
+  background-color: #d9d6df;
+  color: #000000;
+  margin: 0 5% 5% 0;
+  cursor: pointer;
 }

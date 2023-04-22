@@ -7,7 +7,6 @@ import useFetch from "./useFetch";
 import { Link } from "react-router-dom";
 
 const Admin = () => {
-  // TODO: REPLACE WITH REAL DATA
   const {
     data: movies,
     isLoading,
