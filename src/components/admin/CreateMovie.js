@@ -12,6 +12,7 @@ const CreateMovie = () => {
     const [synopsis, setSynopsis] = useState('');
 
     const [isPending, setIsPending]= useState(false);
+
     const navigate = useNavigate();
 
 
@@ -31,6 +32,7 @@ const CreateMovie = () => {
         })
     }
 
+
     return (
         <div className="addMovie">
             <h2>Agregar película</h2>
@@ -42,8 +44,15 @@ const CreateMovie = () => {
                     <label> Link de portada</label>
                     <input type="link"
                         value={cover_url}
-                        onChange={(e) => setCover(e.target.value)} 
+                        onChange={(e) =>
+                            setCover(e.target.value)
+                            } 
                         />
+                    {cover_url && 
+                    <>
+                        <p className="title-preview">Vista previa del poster</p>
+                        <img className="poster-preview" src={cover_url} alt="user input poster"></img>
+                    </>}
                     <label> Link del Trailer</label>
                     <input type="link"
                         value={trailer_url}

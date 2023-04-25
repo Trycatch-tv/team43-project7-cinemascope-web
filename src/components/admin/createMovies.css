@@ -33,8 +33,18 @@ h2{
 }
 
 label{
-    margin-top: 3%;
-    margin-bottom: 1%;
+    margin-top: 15px;
+    margin-bottom: 5px;
+}
+
+.title-preview{
+    padding-top: 15px;
+}
+.poster-preview{
+    max-height: 70%;
+    max-width: 60%;
+    align-self: center;
+    padding: 2% 0%;
 }
 
 .buttons{
