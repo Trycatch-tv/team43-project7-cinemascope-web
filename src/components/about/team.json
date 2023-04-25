@@ -21,13 +21,13 @@
     },
     {
         "id": 3,
-        "image": "default.png",
+        "image": "NicolGuevara.jpg",
         "name": "Nicol Guevara",
         "email": "nicgueca@outlook.com",
         "position": "Frontend Developer",
         "description": "",
         "gitHub": "https://github.com/Neofitar",
-        "linkedIn": ""
+        "linkedIn": "https://www.linkedin.com/in/nicol-guevara/"
     },
     {
         "id": 4,
