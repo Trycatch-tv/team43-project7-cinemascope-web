@@ -1,27 +1,18 @@
 import ArrowBackIosNewIcon from '@mui/icons-material/ArrowBackIosNew';
 import ArrowForwardIosIcon from '@mui/icons-material/ArrowForwardIos';
 import React, { useEffect, useState } from "react";
-import * as MoviesServer from "../movies/MoviesServer";
 import "./MoviesDisplay.css"
 
+import useFetch from '../admin/useFetch';
+
 const MoviesDisplay = () => {
-    const [movies, setMovies] = useState([]);
+    
+    const {
+    data: movies,
+    isLoading,
+    error,
+    } = useFetch("https://dev-cinemascope-api.azurewebsites.net/api/movies/");
     const [currentMovieIndex, setCurrentMovieIndex] = useState(0);
-  
-    const listMovies = async () => {
-      try {
-        const res = await MoviesServer.AllMovies();
-        const data = await res.json();
-        console.log(data.body);
-        setMovies(data.body);
-      } catch (error) {
-        console.log(error);
-      }
-    };
-  
-    useEffect(() => {
-      listMovies();
-    }, []);
 
     const handleNextMovie = () => {
         setCurrentMovieIndex(prevIndex => (prevIndex + 1) % movies.length);
@@ -31,21 +22,21 @@ const MoviesDisplay = () => {
         setCurrentMovieIndex(prevIndex => (prevIndex - 1 + movies.length) % movies.length);
     }
 
-    const currentMovieData = movies[currentMovieIndex];
-
-    return (
+    return(
         <div className="movies-display">
-            {currentMovieData && (
+            {error && <div>{error}</div>}
+            {isLoading && <div class="lds-dual-ring"></div>}
+            {movies && (
                 <>
                     <h2 className='section-title'>Novedades</h2>
                     <div className="movies-list">
                         <ArrowBackIosNewIcon className='movie-buttom' onClick={handlePrevMovie} />
                         <div className="single-movie">
                             <div className="movie-poster">
-                                <img src={currentMovieData.cover_url} alt={currentMovieData.title}></img>
+                                <img src={movies[currentMovieIndex].cover_url} alt= {movies[currentMovieIndex].title}></img>
                             </div>
-                            <p className="movie-title">{currentMovieData.title}</p>
-                            <p className="movie-year">{currentMovieData.year}</p>
+                            <p className="movie-title">{movies[currentMovieIndex].title}</p>
+                            <p className="movie-year">{movies[currentMovieIndex].year}</p>
                             <div className='movie-rating_1'>
                                 <img src="/img/comentario.png" alt="commit"></img>
                                 <img src="/img/estrella.png" alt="start"></img>
@@ -56,9 +47,6 @@ const MoviesDisplay = () => {
                     </div>
                 </>
             )}
-        </div>
-    );
-}
-
+        </div>)
+    }
 export default MoviesDisplay;
-

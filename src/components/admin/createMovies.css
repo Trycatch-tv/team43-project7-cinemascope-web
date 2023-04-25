@@ -1,0 +1,65 @@
+.addMovie{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0% 10%;
+    min-height: 83.5vh;
+    background-color: var(--background-black);
+    color: var(--background-white);
+}
+
+h2{
+    margin-top: 2%;
+    font-size: larger;
+}
+
+.fullForm{
+    display: flex;
+    width: 100%;
+    justify-content:space-around;
+    padding: 2% 0%;
+    min-height: 100%;
+}
+.left{
+    display:flex;
+    flex-direction: column;
+    width: 30%;
+}
+.info{
+    display:flex;
+    flex-direction: column;
+    width: 55%; 
+}
+
+label{
+    margin-top: 15px;
+    margin-bottom: 5px;
+}
+
+.title-preview{
+    padding-top: 15px;
+}
+.poster-preview{
+    max-height: 70%;
+    max-width: 60%;
+    align-self: center;
+    padding: 2% 0%;
+}
+
+.buttons{
+    width: 30%;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 8%;
+}
+
+/* individual button styling on adminMovies.css*/
+
+/* TODO Edit style of portada's input*/
+
+input, select, textarea{
+    border: gray 1px solid;
+    border-radius: 20px;
+    padding: 0.5rem 1rem;
+}
