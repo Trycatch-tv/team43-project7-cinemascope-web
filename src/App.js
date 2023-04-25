@@ -14,7 +14,7 @@ import MoviesList from './components/movies/MoviesList.jsx';
 import About from './components/about/About.jsx';
 
 const router = createBrowserRouter ([
-  {path:'/', element:<main><MovieDetails/><FiltersMovie/><Genrebar/><MoviesDisplay/></main>},               // Página principal
+  {path:'/', element:<main><Genrebar/><MoviesDisplay/></main>},               // Página principal
   {path:'/movies/:id', element: <MovieDetails></MovieDetails>},               // Detalles de una película
   {path:'/admin', element: <Admin></Admin>},                                  // Listado para administración de películas
   {path:'/admin/movies/create', element:<CreateMovie></CreateMovie>},         // Creación de películas nuevas
