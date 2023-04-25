@@ -1,6 +1,7 @@
 /* General page------------------------------- */
 
 .movies-admin {
+  padding: 2%;
   display: flex;
   flex-direction: column;
   background-color: var(--background-black);
@@ -14,18 +15,20 @@
   justify-content: space-evenly;
   gap: 1%;
   padding: 5%;
-  color: #211e29;
+  color: var(--background-black);
 }
 
 .button-add {
-  width: 10%;
+  width: 150px;
   border-radius: 30px;
   border-style: none;
-  margin: 2%;
   align-self: flex-end;
+  margin-right: 150px;
+  margin-top: 30px;
+  margin-bottom: 30px;
 }
 .button-add:hover {
-  border: #a82422 solid 3px;
+  border: var(--background-red) solid 3px;
 }
 
 /* LOADING ----------------------------*/
@@ -41,8 +44,8 @@
   width: 64px;
   height: 64px;
   border-radius: 50%;
-  border: 6px solid #ffffff9d;
-  border-color: #ffffff transparent #ffffff transparent;
+  border: 6px solid var(--background-white);
+  border-color: var(--background-white) transparent var(--background-white) transparent;
   animation: lds-dual-ring 1.2s linear infinite;
 }
 @keyframes lds-dual-ring {
@@ -57,9 +60,10 @@
 /*Group of movies container-------------*/
 
 .movie-list {
-  width: 70%;
+  width: 80%;
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(5, 2fr);
+  justify-content: center;
   align-self: center;
   justify-items: center;
 }
@@ -68,22 +72,37 @@
 
 /* buttons*/
 .buttons-container {
-  width: 100%;
+  width: 70%;
   display: flex;
   justify-content: space-around;
+  align-items: center;
+  margin-top: 20px;
+
 }
 
 .buttons-edit-delete {
-  background-color: #a82422;
+  background-color: var(--background-red);
   border-radius: 30px;
   border-style: none;
-  padding: 2% 3%;
-  align-items: center;
+  padding: 5px;
+  justify-content: center;
+  align-items: center;  
   cursor: pointer;
+  margin: 0;
 }
 
+.buttons-edit-delete:hover {
+  background-color: var(--background-white);
+
+}
+
+
 .icon-admin {
-  color: white;
+  color: var(--background-white);
+}
+
+.icon-admin:hover{
+  color: var(--background-black);
 }
 
 /*movie*/
@@ -91,29 +110,43 @@
   height: 100%;
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
   width: 85%;
   gap: 3%;
   padding-bottom: 20%;
 }
 
 .movie-preview .movie-poster {
-  width: 100%;
-  height: 70%;
+  width: 160px;
+  height: 220px;
   border-style: none;
+  border-radius: 10px;
+  cursor: pointer;
+
 }
 
+.movie-preview .movie-poster:hover {
+  border: 1px solid var(--background-red);
+}
+
+
+
+
 .movie-title {
+  font-size: 30px;
   font-weight: 700;
 }
+
 
 /*Confirmation window*/
 
 .confirm-button {
   padding: 1% 8%;
   border-style: none;
-  border-radius: 20px;
-  background-color: #a82422;
-  color: #ffffff;
+  border-radius: 30px;
+  background-color: var(--background-red);
+  color: var(--background-white);
   margin-bottom: 5%;
   cursor: pointer;
 }
@@ -122,8 +155,50 @@
   padding: 1% 8%;
   border-style: none;
   border-radius: 20px;
-  background-color: #d9d6df;
-  color: #000000;
+  background-color:var(--background-white);
+  color: var(--background-black);
   margin: 0 5% 5% 0;
   cursor: pointer;
+}
+
+
+.single-movie {
+  width: 160px;
+  margin: 10px;
+}
+
+@media screen and (max-width: 1024px) {
+  .movie-list {
+    transition: 0.8s;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .button-add {
+    transition: 0.5s;
+    width: 150px;
+    border-radius: 30px;
+    border-style: none;
+    align-self: center;
+    margin-right: 0;
+  }
+  
+}
+
+@media screen and (max-width: 702px) {
+  .movie-list {
+    transition: 0.8s;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+}
+
+@media screen and (max-width: 502px) {
+  .movie-list {
+    transition: 0.8s;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+  }
+  
 }

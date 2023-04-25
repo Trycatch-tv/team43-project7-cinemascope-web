@@ -16,7 +16,7 @@ const MovieList = ({ movies }) => {
     });
     fetch(
       "https://dev-cinemascope-api.azurewebsites.net/api/movies/admin/" +
-        movieId,
+      movieId,
       {
         method: "DELETE",
       }
@@ -50,13 +50,15 @@ const MovieList = ({ movies }) => {
               <DeleteIcon className="icon-admin" />
             </button>
           </div>
-          <img
-            className="movie-poster"
-            src={movie.cover_url}
-            alt={movie.title + " poster"}
-          />
-          <p className="movie-title">{movie.title}</p>
-          <p className="movie-year">{movie.release_date}</p>
+          <div className="single-movie">
+            <img
+              className="movie-poster"
+              src={movie.cover_url}
+              alt={movie.title + " poster"}
+            />
+            <p className="movie-title">{movie.title}</p>
+            <p className="movie-year">{movie.release_date}</p>
+          </div>
         </div>
       ))}
       <ConfirmDialog
