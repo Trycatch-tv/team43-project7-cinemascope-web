@@ -37,6 +37,12 @@ const About = () => {
           información detallada de cada película, donde se incluyen los detalles
           técnicos, sinopsis, elenco, críticas y calificaciones.
         </p>
+        <br/>
+        <blockquote>
+          <p dir="auto">Este proyecto se ha realizado con fines educativos, sin ánimo de lucro y con el objetivo meramente de aprender sobre las tecnologías con las que se ha implementado. Forma parte de la iniciativa impulsada por <a href="https://linktr.ee/trycatch.tv" rel="nofollow">TryCatch.TV</a> (Aprendizaje colaborativo) para realizar proyectos de forma colaborativa con varios desarrolladores que están apuntando a mejorar sus habilidades en ciertas áreas y para aquellos que están en búsqueda de sus primeros empleos como desarrolladores de software.</p>
+          <p dir="auto">Nosotros no somos responsables de cómo se use este proyecto ni de las consecuencias que puedan derivarse de su uso. Todos los participantes en este proyecto han contribuido de manera voluntaria y no se ha pagado a nadie por su colaboración. El código fuente de este proyecto se proporciona tal cual, sin garantías de ningún tipo.</p>
+          <p dir="auto">Si tienes alguna pregunta o comentario, no dudes en ponerte en contacto con nosotros.</p>
+        </blockquote>
         <Grid
           container
           spacing={{ xs: 5, md: 2 }}

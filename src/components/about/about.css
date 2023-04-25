@@ -40,3 +40,10 @@
   object-fit: fill;
   padding: auto;
 }
+
+blockquote{
+  padding: 0 1em;
+  color: var(--color-fg-muted);
+  border-left: .25em solid black;
+  text-align: justify;
+}
