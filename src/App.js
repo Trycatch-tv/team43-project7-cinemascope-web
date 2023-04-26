@@ -8,7 +8,6 @@ import CreateMovie from './components/admin/CreateMovie.js';
 import Admin from './components/admin/Movies.js';
 import EditMovie from './components/admin/EditMovie.js';
 import Footer from './components/footer/index.js';
-import FiltersMovie from './components/filters/index.js'
 import './App.css';
 import MoviesList from './components/movies/MoviesList.jsx';
 import About from './components/about/About.jsx';
